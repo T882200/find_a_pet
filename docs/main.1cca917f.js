@@ -292,7 +292,7 @@ function fetchAnimals(e) {
   }
 
   // Fetch Pets
-  (0, _fetchJsonp2.default)('http://api.petfinder.com/pet.find?format=json&key=1ff9ed0880e1fbd503b38ef4e6658623&animal=' + animal + '&location=' + zip + '&callback=callback', {
+  (0, _fetchJsonp2.default)('https://api.petfinder.com/pet.find?format=json&key=1ff9ed0880e1fbd503b38ef4e6658623&animal=' + animal + '&location=' + zip + '&callback=callback', {
     jsonpCallbackFunction: 'callback'
   }).then(function (res) {
     return res.json();
